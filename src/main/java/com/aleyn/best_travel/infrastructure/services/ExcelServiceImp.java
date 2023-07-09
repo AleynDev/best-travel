@@ -1,7 +1,7 @@
 package com.aleyn.best_travel.infrastructure.services;
 
-import com.aleyn.best_travel.domain.entities.CustomerEntity;
-import com.aleyn.best_travel.domain.repositories.CustomerRepository;
+import com.aleyn.best_travel.domain.entities.jpa.CustomerEntity;
+import com.aleyn.best_travel.domain.repositories.jpa.CustomerRepository;
 import com.aleyn.best_travel.infrastructure.abstract_services.ReportService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

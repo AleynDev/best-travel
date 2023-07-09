@@ -1,6 +1,6 @@
-package com.aleyn.best_travel.domain.repositories;
+package com.aleyn.best_travel.domain.repositories.jpa;
 
-import com.aleyn.best_travel.domain.entities.ReservationEntity;
+import com.aleyn.best_travel.domain.entities.jpa.ReservationEntity;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.UUID;

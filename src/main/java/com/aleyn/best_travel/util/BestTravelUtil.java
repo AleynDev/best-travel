@@ -1,9 +1,21 @@
 package com.aleyn.best_travel.util;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Random;
 
 public class BestTravelUtil {
+
+    public static void writeNotification(String text, String path) {
+        try (var bw = new BufferedWriter( new FileWriter(path, true))){
+            bw.write(text);
+            bw.newLine();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     private static final Random random = new Random();
 

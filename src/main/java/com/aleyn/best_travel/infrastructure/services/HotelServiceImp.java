@@ -1,8 +1,8 @@
 package com.aleyn.best_travel.infrastructure.services;
 
 import com.aleyn.best_travel.api.models.responses.HotelResponse;
-import com.aleyn.best_travel.domain.entities.HotelEntity;
-import com.aleyn.best_travel.domain.repositories.HotelRepository;
+import com.aleyn.best_travel.domain.entities.jpa.HotelEntity;
+import com.aleyn.best_travel.domain.repositories.jpa.HotelRepository;
 import com.aleyn.best_travel.infrastructure.abstract_services.HotelService;
 import com.aleyn.best_travel.util.constants.CacheConstants;
 import com.aleyn.best_travel.util.enums.SortType;

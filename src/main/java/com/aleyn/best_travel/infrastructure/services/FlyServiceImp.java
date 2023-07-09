@@ -1,8 +1,8 @@
 package com.aleyn.best_travel.infrastructure.services;
 
 import com.aleyn.best_travel.api.models.responses.FlyResponse;
-import com.aleyn.best_travel.domain.entities.FlyEntity;
-import com.aleyn.best_travel.domain.repositories.FlyRepository;
+import com.aleyn.best_travel.domain.entities.jpa.FlyEntity;
+import com.aleyn.best_travel.domain.repositories.jpa.FlyRepository;
 import com.aleyn.best_travel.infrastructure.abstract_services.FlyService;
 import com.aleyn.best_travel.util.constants.CacheConstants;
 import com.aleyn.best_travel.util.enums.SortType;

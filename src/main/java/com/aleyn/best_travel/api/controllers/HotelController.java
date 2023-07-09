@@ -2,6 +2,7 @@ package com.aleyn.best_travel.api.controllers;
 
 import com.aleyn.best_travel.api.models.responses.HotelResponse;
 import com.aleyn.best_travel.infrastructure.abstract_services.HotelService;
+import com.aleyn.best_travel.util.annotations.Notify;
 import com.aleyn.best_travel.util.enums.SortType;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -43,6 +44,7 @@ public class HotelController {
                     example = "LOWER"
             )
     })
+    @Notify(value = "Hotel request")
     @GetMapping
     public ResponseEntity<Page<HotelResponse>> getAll(
             @RequestParam Integer numPage,

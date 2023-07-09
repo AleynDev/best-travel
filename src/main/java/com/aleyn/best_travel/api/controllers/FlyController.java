@@ -2,6 +2,7 @@ package com.aleyn.best_travel.api.controllers;
 
 import com.aleyn.best_travel.api.models.responses.FlyResponse;
 import com.aleyn.best_travel.infrastructure.abstract_services.FlyService;
+import com.aleyn.best_travel.util.annotations.Notify;
 import com.aleyn.best_travel.util.enums.SortType;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -10,6 +11,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
@@ -43,11 +45,15 @@ public class FlyController {
                     example = "LOWER"
             )
     })
+    @Notify(value = "Fly request")
     @GetMapping
     public ResponseEntity<Page<FlyResponse>> getAll(
             @RequestParam Integer numPage,
             @RequestParam Integer sizePage,
             @RequestHeader(required = false, defaultValue = "NONE") SortType sortType) {
+
+        var authentication = SecurityContextHolder.getContext().getAuthentication();
+        System.err.println(authentication.getAuthorities());
 
         var response = flyService.readAll(numPage, sizePage, sortType);
         return response.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(response);

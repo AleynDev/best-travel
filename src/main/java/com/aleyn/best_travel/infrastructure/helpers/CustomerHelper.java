@@ -1,6 +1,6 @@
 package com.aleyn.best_travel.infrastructure.helpers;
 
-import com.aleyn.best_travel.domain.repositories.CustomerRepository;
+import com.aleyn.best_travel.domain.repositories.jpa.CustomerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;

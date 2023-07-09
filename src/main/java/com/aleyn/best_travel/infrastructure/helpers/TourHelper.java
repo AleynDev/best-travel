@@ -1,8 +1,8 @@
 package com.aleyn.best_travel.infrastructure.helpers;
 
-import com.aleyn.best_travel.domain.entities.*;
-import com.aleyn.best_travel.domain.repositories.ReservationRepository;
-import com.aleyn.best_travel.domain.repositories.TicketRepository;
+import com.aleyn.best_travel.domain.entities.jpa.*;
+import com.aleyn.best_travel.domain.repositories.jpa.ReservationRepository;
+import com.aleyn.best_travel.domain.repositories.jpa.TicketRepository;
 import com.aleyn.best_travel.infrastructure.services.ReservationServiceImp;
 import com.aleyn.best_travel.infrastructure.services.TicketServiceImp;
 import com.aleyn.best_travel.util.BestTravelUtil;

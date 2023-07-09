@@ -2,11 +2,11 @@ package com.aleyn.best_travel.infrastructure.services;
 
 import com.aleyn.best_travel.api.models.request.TourRequest;
 import com.aleyn.best_travel.api.models.responses.TourResponse;
-import com.aleyn.best_travel.domain.entities.*;
-import com.aleyn.best_travel.domain.repositories.CustomerRepository;
-import com.aleyn.best_travel.domain.repositories.FlyRepository;
-import com.aleyn.best_travel.domain.repositories.HotelRepository;
-import com.aleyn.best_travel.domain.repositories.TourRepository;
+import com.aleyn.best_travel.domain.entities.jpa.*;
+import com.aleyn.best_travel.domain.repositories.jpa.CustomerRepository;
+import com.aleyn.best_travel.domain.repositories.jpa.FlyRepository;
+import com.aleyn.best_travel.domain.repositories.jpa.HotelRepository;
+import com.aleyn.best_travel.domain.repositories.jpa.TourRepository;
 import com.aleyn.best_travel.infrastructure.abstract_services.TourService;
 import com.aleyn.best_travel.infrastructure.helpers.BlackListHelper;
 import com.aleyn.best_travel.infrastructure.helpers.CustomerHelper;

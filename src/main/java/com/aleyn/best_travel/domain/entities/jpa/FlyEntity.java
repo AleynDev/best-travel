@@ -1,4 +1,4 @@
-package com.aleyn.best_travel.domain.entities;
+package com.aleyn.best_travel.domain.entities.jpa;
 
 import com.aleyn.best_travel.util.enums.AirLine;
 import jakarta.persistence.*;
